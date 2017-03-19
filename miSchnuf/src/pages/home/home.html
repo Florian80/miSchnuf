@@ -1,49 +1,46 @@
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      miSchnuf
-    </ion-title>
-  </ion-navbar>
+
+
+          <ion-title class="start">
+              miSchnuf
+          </ion-title>
+
+      <ion-buttons end>
+          <button ion-button icon-only color="primary">
+              <ion-icon name="menu"></ion-icon>
+          </button>
+      </ion-buttons>
+
+</ion-navbar>
+
 </ion-header>
 
 <ion-content class="home" padding>
 
-    <h2 class="center">miSchnuf</h2> 
+    <h2 class="center">miSchnuf V0.0.1</h2> 
 
     <div class="center">
-        <p class="ionic-logo"></p>
+        <ion-img width="280" height="178" src="http://www.publicdomainpictures.net/pictures/10000/velka/2473-1270809666Fpnm.jpg"></ion-img>
     </div>
 
     <ion-card>
-        <ion-card-header>
-            Docs are here to help you
+        <ion-card-header class="center">
+            HERZLICH WILLKOMMEN
         </ion-card-header>
-
         <ion-list>
-            <button ion-item (click)="onLink('http://go.microsoft.com/fwlink/?LinkID=820516')">
-                <ion-icon name="jet" item-left></ion-icon>
-                Getting Started
-            </button>
 
-            <button ion-item (click)="onLink('http://go.microsoft.com/fwlink/?LinkID=820761')">
-                <ion-icon name="ionic" item-left></ion-icon>
-                Ionic Framework
-            </button>
+            <ion-item>
+                <ion-input type="text" placeholder="Benutzername"></ion-input>
+            </ion-item>
 
-            <button ion-item (click)="onLink('http://go.microsoft.com/fwlink/?LinkID=820520')">
-                <ion-icon name="thunderstorm" item-left></ion-icon>
-                Azure Services
-            </button>
+            <ion-item>
+                <ion-input type="password" placeholder="Passwort"></ion-input>
+            </ion-item>
 
-            <button ion-item (click)="onLink('http://go.microsoft.com/fwlink/?LinkID=820524')">
-                <ion-icon name="cafe" item-left></ion-icon>
-                Plugins Support
-            </button>
+            <button ion-button block color="primary">Anmelden</button>
 
-            <button ion-item (click)="onLink('http://go.microsoft.com/fwlink/?LinkID=820526')">
-                <ion-icon name="paw" item-left></ion-icon>
-                Troubleshooting
-            </button>
         </ion-list>
         
     </ion-card>
