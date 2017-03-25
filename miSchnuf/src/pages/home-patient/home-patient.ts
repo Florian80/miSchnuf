@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { PatientCatPage } from '../patient-cat/patient-cat';
+import { PatientSpiroPage } from '../patient-spiro/patient-spiro';
 
-/*
-  Generated class for the HomePatient page.
-
-  See http://ionicframework.com/docs/v2/components/#navigation for more info on
-  Ionic pages and navigation.
-*/
 @Component({
   selector: 'page-home-patient',
   templateUrl: 'home-patient.html'
@@ -15,8 +11,14 @@ export class HomePatientPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad HomePatientPage');
+  pushPageCat() {
+      // push another page on to the navigation stack
+      this.navCtrl.push(PatientCatPage);
+  }
+
+  pushPageSpiro() {
+      // push another page on to the navigation stack
+      this.navCtrl.push(PatientSpiroPage);
   }
 
 }

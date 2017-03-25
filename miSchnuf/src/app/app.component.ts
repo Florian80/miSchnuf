@@ -3,7 +3,9 @@ import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { HomePage } from '../pages/home/home';
-import { HomePatientPage } from '../home-patient/home-patient'
+import { HomePatientPage } from '../pages/home-patient/home-patient';
+import { PatientCatPage } from '../pages/patient-cat/patient-cat';
+import { PatientSpiroPage } from '../pages/patient-spiro/patient-spiro';
 
 
 @Component({
