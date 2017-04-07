@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { MyCATData } from '../providers/my-cat-data';
+import { NgModule, ErrorHandler } from '@angular/core';
 
 /*
   Generated class for the PatientCat page.
@@ -11,12 +13,14 @@ import { NavController, NavParams } from 'ionic-angular';
   selector: 'page-patient-cat',
   templateUrl: 'patient-cat.html'
 })
+
 export class PatientCatPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+    constructor(public navCtrl: NavController, public navParams: NavParams) { }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PatientCatPage');
+      ionViewDidLoad() {
+      console.log('ionViewDidLoad PatientCatPage');
+
   }
 
 }

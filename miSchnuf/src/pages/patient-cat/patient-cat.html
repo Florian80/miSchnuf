@@ -9,19 +9,16 @@
 
 <ion-content padding>
 
-    <ion-slides pager>
-
-        <ion-slide style="background-color: white">
             <h2>Frage 1</h2>
 
-            <ion-list radio-group>
+            <ion-list radio-group [(ngModel)]="valueAnswerOne">
                 
                     <ion-item>
                         <ion-avatar item-left>
                             <img src="img/number-0-2400px.png">
                         </ion-avatar>
                         <ion-label text-wrap>Ich huste nie</ion-label>
-                        <ion-radio value="zero"></ion-radio>
+                        <ion-radio ng-valueAnswerOne="0"></ion-radio>
                     </ion-item>
 
                     <ion-item>
@@ -29,7 +26,7 @@
                             <img src="img/number-1-2400px.png">
                         </ion-avatar>
                         <ion-label></ion-label>
-                        <ion-radio value="one"></ion-radio>
+                        <ion-radio ng-valueAnswerOne="1"></ion-radio>
                     </ion-item>
 
                     <ion-item>
@@ -37,7 +34,7 @@
                             <img src="img/number-2-2400px.png">
                         </ion-avatar>
                         <ion-label></ion-label>
-                        <ion-radio value="two"></ion-radio>
+                        <ion-radio ng-valueAnswerOne="2"></ion-radio>
                     </ion-item>
 
                     <ion-item>
@@ -45,7 +42,7 @@
                             <img src="img/number-3-2400px.png">
                         </ion-avatar>
                         <ion-label></ion-label>
-                        <ion-radio value="three"></ion-radio>
+                        <ion-radio ng-valueAnswerOne="3"></ion-radio>
                     </ion-item>
 
                     <ion-item>
@@ -53,7 +50,7 @@
                             <img src="img/number-4-2400px.png">
                         </ion-avatar>
                         <ion-label></ion-label>
-                        <ion-radio value="four"></ion-radio>
+                        <ion-radio ng-valueAnswerOne="4"></ion-radio>
                     </ion-item>
 
                     <ion-item>
@@ -61,14 +58,11 @@
                             <img src="img/number-5-2400px.png">
                         </ion-avatar>
                         <ion-label text-wrap>Ich huste immer</ion-label>
-                        <ion-radio value="five"></ion-radio>
+                        <ion-radio ng-valueAnswerOne="5"></ion-radio>
                     </ion-item>
 
             </ion-list>
-            
-        </ion-slide>
 
-        <ion-slide style="background-color: white">
             <h2>Frage 2</h2>
 
             <ion-list radio-group>
@@ -123,9 +117,6 @@
 
             </ion-list>
 
-        </ion-slide>
-
-        <ion-slide style="background-color: white">
             <h2>Frage 3</h2>
 
             <ion-list radio-group>
@@ -180,9 +171,6 @@
 
             </ion-list>
 
-        </ion-slide>
-
-        <ion-slide style="background-color: white">
             <h2>Frage 4</h2>
 
             <ion-list radio-group>
@@ -237,9 +225,6 @@
 
             </ion-list>
 
-        </ion-slide>
-
-        <ion-slide style="background-color: white">
             <h2>Frage 5</h2>
 
             <ion-list radio-group>
@@ -294,9 +279,6 @@
 
             </ion-list>
 
-        </ion-slide>
-
-        <ion-slide style="background-color: white">
             <h2>Frage 6</h2>
 
             <ion-list radio-group>
@@ -351,9 +333,6 @@
 
             </ion-list>
 
-        </ion-slide>
-
-        <ion-slide style="background-color: white">
             <h3>Frage 7</h3>
 
             <ion-list radio-group>
@@ -408,9 +387,6 @@
 
             </ion-list>
 
-        </ion-slide>
-
-        <ion-slide style="background-color: white">
             <h2>Frage 8</h2>
 
             <ion-list radio-group>
@@ -465,9 +441,6 @@
 
             </ion-list>
 
-        </ion-slide>
-
-        <ion-slide style="background-color: white">
             <h2>Auswertung</h2>
             <ion-list>
 
@@ -499,13 +472,8 @@
                     <ion-label>Resultat</ion-label>
                 </ion-item>
                     
-               
             </ion-list>
 
             <button ion-button large block>Absenden</button>
-
-        </ion-slide>
-
-    </ion-slides>
 
 </ion-content>
