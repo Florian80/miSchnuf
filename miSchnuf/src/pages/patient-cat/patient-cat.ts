@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { MyCATData } from '../providers/my-cat-data';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -14,6 +14,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
   templateUrl: 'patient-cat.html'
 })
 
+@Injectable()
 export class PatientCatPage {
 
     constructor(public navCtrl: NavController, public navParams: NavParams) { }

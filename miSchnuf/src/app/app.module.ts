@@ -1,4 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -14,11 +15,13 @@ import { MyCATData } from '../providers/my-cat-data';
     HomePage,
     HomePatientPage,
     PatientCatPage,
-    PatientSpiroPage  
+    PatientSpiroPage,
+    MyCATData  
   ],
   imports: [
       IonicModule.forRoot(MyApp),
-      FormsModule
+      FormsModule,
+      BrowserModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -28,7 +31,6 @@ import { MyCATData } from '../providers/my-cat-data';
     PatientCatPage,
     PatientSpiroPage,
     MyCATData
-
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler },
       { provide: MyCATData, useClass: MyApp}]

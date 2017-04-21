@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import 'rxjs/add/operator/map';
-import { Components } from 'angular/core';
+import { NgModule, Component } from 'angular/core';
 
 /*
   Generated class for the MyCATData provider.
@@ -11,11 +11,19 @@ import { Components } from 'angular/core';
 @Injectable()
 export class MyCATData {
 
-    constructor(public valueAnswerOne: number, public valueAnswerTwo: number,
-        public valueAnswerThree: number, public valueAnswerFive: number, public valueAnswerSix: number,
-        public valueAnswerSeven: number, public valueAnswerEight: number) {
+    constructor(
+        public valueAnswerOne: number,
+        public valueAnswerTwo: number,
+        public valueAnswerThree: number,
+        public valueAnswerFour: number,
+        public valueAnswerFive: number,
+        public valueAnswerSix: number,
+        public valueAnswerSeven: number,
+        public valueAnswerEight: number,
+        public valueAnswerTotal: number,
+    ) { };
 
-        console.log('Hello MyCATData Provider');
-  }
+
+
 
 }
