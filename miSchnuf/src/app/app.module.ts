@@ -15,8 +15,7 @@ import { MyCATData } from '../providers/my-cat-data';
     HomePage,
     HomePatientPage,
     PatientCatPage,
-    PatientSpiroPage,
-    MyCATData  
+    PatientSpiroPage 
   ],
   imports: [
       IonicModule.forRoot(MyApp),
@@ -29,10 +28,8 @@ import { MyCATData } from '../providers/my-cat-data';
     HomePage,
     HomePatientPage,
     PatientCatPage,
-    PatientSpiroPage,
-    MyCATData
+    PatientSpiroPage
   ],
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler },
-      { provide: MyCATData, useClass: MyApp}]
+  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })
 export class AppModule {}

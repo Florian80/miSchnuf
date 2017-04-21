@@ -19,9 +19,10 @@ export class PatientCatPage {
 
     constructor(public navCtrl: NavController, public navParams: NavParams) { }
 
-      ionViewDidLoad() {
-      console.log('ionViewDidLoad PatientCatPage');
+    ionViewDidLoad() {
 
-  }
+      console.log('ionViewDidLoad PatientCatPage');
+    
+      }
 
 }
