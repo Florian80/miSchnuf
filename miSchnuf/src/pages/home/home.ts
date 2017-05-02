@@ -18,4 +18,5 @@ export class HomePage {
         // push another page on to the navigation stack
         this.navCtrl.push(HomePatientPage);
     }
+
 }

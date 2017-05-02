@@ -1,12 +1,13 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HomePatientPage } from '../pages/home-patient/home-patient';
 import { PatientCatPage } from '../pages/patient-cat/patient-cat';
 import { PatientSpiroPage } from '../pages/patient-spiro/patient-spiro';
+import { PatientArchivePage } from '../pages/patient-archive/patient-archive';
+import { PatientAltQuestPage } from '../pages/patient-alt-quest/patient-alt-quest';
 import { MyCATData } from '../providers/my-cat-data';
 
 @NgModule({
@@ -15,11 +16,12 @@ import { MyCATData } from '../providers/my-cat-data';
     HomePage,
     HomePatientPage,
     PatientCatPage,
-    PatientSpiroPage 
+    PatientSpiroPage,
+    PatientArchivePage,
+    PatientAltQuestPage
   ],
   imports: [
       IonicModule.forRoot(MyApp),
-      FormsModule,
       BrowserModule
   ],
   bootstrap: [IonicApp],
@@ -28,7 +30,9 @@ import { MyCATData } from '../providers/my-cat-data';
     HomePage,
     HomePatientPage,
     PatientCatPage,
-    PatientSpiroPage
+    PatientSpiroPage,
+    PatientArchivePage,
+    PatientAltQuestPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
 })

@@ -6,6 +6,8 @@ import { HomePatientPage } from '../pages/home-patient/home-patient';
 import { PatientCatPage } from '../pages/patient-cat/patient-cat';
 import { PatientSpiroPage } from '../pages/patient-spiro/patient-spiro';
 import { MyCATData } from '../providers/my-cat-Data';
+import { PatientArchivePage } from '../pages/patient-archive/patient-archive';
+import { PatientAltQuestPage } from '../pages/patient-alt-quest/patient-alt-quest';
 
 
 @Component({
