@@ -28,16 +28,21 @@
             HERZLICH WILLKOMMEN
         </ion-card-header>
         <ion-list>
+            <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
 
-            <ion-item>
-                <ion-input type="text" placeholder="Benutzername"></ion-input>
-            </ion-item>
+                <ion-item>
+                    <ion-input [(ngModel)]="userInfo.name" formControlName='name' type="text"
+                               id="name" spellcheck="false" autocapitalize="off" placeholder="Benutzername"></ion-input>
+                </ion-item>
 
-            <ion-item>
-                <ion-input type="password" placeholder="Passwort"></ion-input>
-            </ion-item>
+                <ion-item>
+                    <ion-input [(ngModel)]="userInfo.password" formControlName='name' type="password"
+                               id="password" spellcheck="false" autocapitalize="off" placeholder="Passwort"></ion-input>
+                </ion-item>
 
-            <button ion-button (click)="pushPage()" block color="primary">Anmelden</button>
+                <button ion-button type="submit" (click)="pushPage()" block color="primary">Anmelden</button>
+
+            </form>
 
         </ion-list>
         
