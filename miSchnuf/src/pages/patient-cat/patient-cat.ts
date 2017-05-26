@@ -1,6 +1,5 @@
 import { Component, Injectable } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { MyCATData } from '../providers/my-cat-data';
 import { NgModule, ErrorHandler } from '@angular/core';
 
 /*

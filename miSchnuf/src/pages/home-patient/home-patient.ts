@@ -4,6 +4,7 @@ import { PatientCatPage } from '../patient-cat/patient-cat';
 import { PatientSpiroPage } from '../patient-spiro/patient-spiro';
 import { PatientAltQuestPage } from '../patient-alt-quest/patient-alt-quest';
 import { PatientArchivePage } from '../patient-archive/patient-archive';
+import { CatPageOnePage } from '../cat-page-one/cat-page-one';
 
 
 @Component({
@@ -32,6 +33,12 @@ export class HomePatientPage {
   pushPagePatientArchive() {
       // push another page on to the navigation stack
       this.navCtrl.push(PatientArchivePage);
+  }
+
+  pushPageCatPageOne() {
+
+      this.navCtrl.push(CatPageOnePage);
+
   }
 
 }

@@ -1,6 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgModule, Component } from '@angular/core';
 import 'rxjs/add/operator/map';
-import { NgModule, Component } from 'angular/core';
 
 /*
   Generated class for the MyCATData provider.
