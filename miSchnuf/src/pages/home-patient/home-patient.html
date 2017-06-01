@@ -9,49 +9,29 @@
 
 <ion-content padding>
 
-    <ion-grid>
+    <button ion-button large block (click)="pushPageCatPageOne()" icon-left>
+        <ion-icon name="clipboard"></ion-icon>
+    Daily Checkup</button>
 
-        <ion-row>
-            <ion-col>
-                <button ion-button large (click)="pushPageCat()">
-                    <ion-img src='img/CAT_logoSmall.gif'></ion-img>
-                </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button (click)="pushPageSpiro()" large icon-left>
-                    <ion-icon name="bluetooth"></ion-icon>
-                    Spiro
-                </button>
-            </ion-col>
-        </ion-row>
+    <button ion-button large block (click)="pushPageCat()" item-left>
+        <ion-img src='img/CAT_logoSmall.gif'>
+        </ion-img>
+        CAT Fragebogen
+    </button>
 
-        <ion-row>
-            <ion-col>
-                <button ion-button (click)="pushPagePatientAltQuest()" large icon-left>
-                    <ion-icon name="clipboard"></ion-icon>
-                            Fragebogen 2
-                </button>
-            </ion-col>
-            <ion-col>
-                <button ion-button (click)="pushPagePatientArchive()" large icon-left>
-                    <ion-icon name="cloud"></ion-icon>
-                    Archive
-                </button>
-            </ion-col>
-        </ion-row>
+    <button ion-button large block (click)="pushPageSpiro()" icon-left>
+        <ion-icon name="bluetooth"></ion-icon>
+        Spirometrie
+    </button>
 
-        <ion-row>
-            <ion-col>
-                <button ion-button (click)="pushPageCatPageOne()" large icon-left>
-                    <ion-icon name="clipboard"></ion-icon>
-                    Daily Checkup
-                </button>
-            </ion-col>
-            <ion-col>
+    <button ion-button large block (click)="pushPagePatientAltQuest()" icon-left>
+        <ion-icon name="clipboard"></ion-icon>
+        Mukus Fragebogen
+    </button>
 
-            </ion-col>
-        </ion-row>
-
-    </ion-grid>
+    <button ion-button large block (click)="pushPagePatientArchive()" icon-left>
+        <ion-icon name="cloud"></ion-icon>
+        Archiv
+    </button>
 
 </ion-content>

@@ -1,18 +1,38 @@
 import { Injectable, NgModule, Component } from '@angular/core';
 import { Http } from '@angular/http';
+import { BrowserModule } from "@angular/platform-browser";
+import { Midata } from "midata";
 import 'rxjs/add/operator/map';
+import { NavController } from "ionic-angular";
+import { HomePatientPage } from "../pages/home-patient/home-patient";
 
-/*
-  Generated class for the MyUserData provider.
+let midata: Midata;
+let username: string;
+let password: string;
 
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular 2 DI.
-*/
 @Injectable()
 export class MyUserData {
 
-  constructor(public http: Http) {
-    console.log('Hello MyUserData Provider');
-  }
+    public midata: Midata;
 
+    constructor(public http: Http, public navCtrl: NavController) {
+
+        this.midata = new Midata('https://test.midata.coop:9000', 'miSchnuf', 'mischnufsecret');
+
+    }
+
+    login() {
+
+        console.log(username);
+        console.log(password);
+
+        /*
+        midata.login(username, password).then(() => {
+            console.info("User id:", midata.user.id);
+            this.navCtrl.setRoot(HomePatientPage);
+        }, (error) => {
+            console.log("You useless prick...", error);
+        });
+        */
+    }
 }

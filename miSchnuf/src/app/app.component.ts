@@ -17,6 +17,8 @@ import { CatPageFivePage } from '../pages/cat-page-five/cat-page-five';
 import { CatPageSixPage } from '../pages/cat-page-six/cat-page-six';
 import { CatPageSevenPage } from '../pages/cat-page-seven/cat-page-seven';
 import { CatPageEightPage } from '../pages/cat-page-eight/cat-page-eight';
+import { SpiroCheckPage } from '../pages/spiro-check/spiro-check';
+import { MucusQuestPage } from '../pages/mucus-quest/mucus-quest';
 
 
 @Component({

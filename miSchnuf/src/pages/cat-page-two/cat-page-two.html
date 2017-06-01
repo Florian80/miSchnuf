@@ -69,4 +69,14 @@
 
         </ion-list>
 
+    <button ion-button large block icon-left (click)="pushPage()">
+        <ion-icon name="arrow-forward"></ion-icon>
+        Next
+    </button>
+
+    <button ion-button large block icon-right (click)="popPage()">
+        Previous
+        <ion-icon name="arrow-back"></ion-icon>
+    </button>
+
 </ion-content>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { MucusQuestPage } from '../mucus-quest/mucus-quest';
 
 /*
   Generated class for the CatPageEight page.
@@ -15,8 +16,12 @@ export class CatPageEightPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CatPageEightPage');
+  pushPage() {
+      this.navCtrl.push(MucusQuestPage);
+  }
+
+  popPage() {
+      this.navCtrl.pop();
   }
 
 }

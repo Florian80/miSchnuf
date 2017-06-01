@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { CatPageFivePage } from '../cat-page-five/cat-page-five';
 
 /*
   Generated class for the CatPageFour page.
@@ -15,8 +16,12 @@ export class CatPageFourPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CatPageFourPage');
+  pushPage() {
+      this.navCtrl.push(CatPageFivePage);
+  }
+
+  popPage() {
+      this.navCtrl.pop();
   }
 
 }

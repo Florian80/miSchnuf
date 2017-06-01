@@ -24,6 +24,8 @@ import { CatPageEightPage } from '../pages/cat-page-eight/cat-page-eight';
 import { MyCATData } from '../providers/my-cat-data';
 import { MySpiroData } from '../providers/my-spiro-data';
 import { MyUserData } from '../providers/my-user-data';
+import { MucusQuestPage } from '../pages/mucus-quest/mucus-quest';
+import { SpiroCheckPage } from '../pages/spiro-check/spiro-check';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { MyUserData } from '../providers/my-user-data';
     CatPageFivePage,
     CatPageSixPage,
     CatPageSevenPage,
-    CatPageEightPage
+    CatPageEightPage,
+    MucusQuestPage,
+    SpiroCheckPage
   ],
   imports: [
       BrowserModule,
@@ -68,7 +72,9 @@ import { MyUserData } from '../providers/my-user-data';
     CatPageFivePage,
     CatPageSixPage,
     CatPageSevenPage,
-    CatPageEightPage
+    CatPageEightPage,
+    MucusQuestPage,
+    SpiroCheckPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }, SplashScreen, StatusBar, MyCATData, MySpiroData, MyUserData]
 })
