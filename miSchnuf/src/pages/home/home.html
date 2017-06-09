@@ -28,19 +28,15 @@
             HERZLICH WILLKOMMEN
         </ion-card-header>
         <ion-list>
-            <form>
                 <ion-item>
-                    <ion-input [(ngModel)]="username" name="username" type="text"
-                               id="name" spellcheck="false" autocapitalize="off" placeholder="Benutzername"></ion-input>
+                    <ion-input type="text" [(ngModel)]="username" name="username" placeholder="Benutzername"></ion-input>
                 </ion-item>
 
                 <ion-item>
-                    <ion-input [(ngModel)]="password" name="password" type="password"
-                               id="password" spellcheck="false" autocapitalize="off" placeholder="Passwort"></ion-input>
+                    <ion-input type="password" [(ngModel)]="password" name="password" placeholder="Passwort"></ion-input>
                 </ion-item>
 
-                <button ion-button id="LoginButton" (click)="pushPage()" block color="primary">Anmelden</button>
-             </form>
+                <button ion-button id="LoginButton" (click)="login()" block color="primary">Anmelden</button>
 </ion-list>
         
     </ion-card>

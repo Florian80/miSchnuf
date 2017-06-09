@@ -5,20 +5,18 @@ import { Midata } from "midata";
 import 'rxjs/add/operator/map';
 import { NavController } from "ionic-angular";
 import { HomePatientPage } from "../pages/home-patient/home-patient";
-
-let midata: Midata;
-let username: string;
-let password: string;
-
+     
 @Injectable()
-export class MyUserData {
+export class MyUserData {   /*
 
     public midata: Midata;
+    username: any;
+    password: any;
 
-    constructor(public http: Http, public navCtrl: NavController) {
+    constructor(public navCtrl: NavController) {
 
         this.midata = new Midata('https://test.midata.coop:9000', 'miSchnuf', 'mischnufsecret');
-
+   
     }
 
     login() {
@@ -26,7 +24,6 @@ export class MyUserData {
         console.log(username);
         console.log(password);
 
-        /*
         midata.login(username, password).then(() => {
             console.info("User id:", midata.user.id);
             this.navCtrl.setRoot(HomePatientPage);
@@ -35,4 +32,3 @@ export class MyUserData {
         });
         */
     }
-}
